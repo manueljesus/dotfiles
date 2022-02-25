@@ -1,0 +1,18 @@
+[alias]
+    lod = log --oneline --decorate --graph --color --abbrev-commit
+	logg = log --decorate --graph --color --abbrev-commit
+	logs = log --decorate --graph --color --abbrev-commit --stat
+	show-assume-unchanged = !git ls-files -v|grep '^[a-z]'|cut -c3-
+	fetch = fetch --prune
+
+[core]
+    editor = vim
+[color "diff"]
+    new = green
+[color "status"]
+    added = green
+[init]
+	templatedir = ~/.git-templates
+	defaultBranch = main
+[user]
+	useConfigOnly = true
