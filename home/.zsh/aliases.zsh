@@ -4,7 +4,7 @@ export COMPOSE_DOCKER_CLI_BUILD=1
 ###############################################################################
 
 #################################### Paths ####################################
-export DATA=/media/${whoami}/Data
+export DATA=/media/$(whoami)/Data
 export PROJECTS=$DATA/Projects
 
 alias data='cd $DATA'
