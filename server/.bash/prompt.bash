@@ -5,8 +5,8 @@ function __prompt__exitcode() {
     [ $EXIT_CODE != 0 ] && echo -e "\001\033[1;31m\002"
 }
 
-source ./git-completion.bash
-source ./git-prompt.bash
+source ~/.bash/git-completion.bash
+source ~/.bash/git-prompt.bash
 
 
 if [[ $(LC_ALL=C type -t __git_ps1 2>/dev/null) == "function" ]]; then
